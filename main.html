@@ -1,64 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- 1. Character set — always first -->
   <meta charset="UTF-8">
-  <!-- 2. Mobile viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- 3. Page title (browser tab + Google) -->
-  <title>Kim Jisoo — Web Programming Portfolio</title>
-  <!-- 4. Google search description -->
-  <meta name="description" content="Portfolio of Kim Jisoo, Gachon University.">
-  <!-- 5. CSS stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <title>Week 2 Practice Exercises Solutions</title>
 </head>
 <body>
 
-  <!-- ═══ HEADER ════════════════════════════ -->
-  <header>
-    <h1>Kim Jisoo</h1>
+  <!-- ===================================================================
+       EXERCISE 1: The HTML Skeleton
+       =================================================================== -->
+  <section id="exercise-1">
+    <h1>Hello, Gachon!</h1>
+  </section>
+
+  <hr>
+
+  <!-- ===================================================================
+       EXERCISE 2: Headings, Paragraphs and Emphasis
+       =================================================================== -->
+  <section id="exercise-2">
+    <h1>Photography</h1>
+
+    <h2>Why I Love It</h2>
+    <p>Photography allows me to capture <strong>unforgettable moments</strong> and freeze time. It transforms ordinary scenes into extraordinary visual stories through artistic expression.</p>
+
+    <h2>How to Start</h2>
+    <p>You do not need an expensive camera to begin; your <em>smartphone</em> is perfectly fine. Focus on learning lighting, composition rules, and practicing consistently every day.</p>
+  </section>
+
+  <hr>
+
+  <!-- ===================================================================
+       EXERCISE 3: Navigation List with Links
+       =================================================================== -->
+  <section id="exercise-3">
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">My Projects</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
-  </header>
+  </section>
 
-  <!-- ═══ MAIN CONTENT ══════════════════════ -->
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <img src="profile.jpg" alt="Kim Jisoo at Gachon University" width="200">
-      <p>I am a <strong>Computer Science student</strong> at
-         <em>Gachon University</em>, learning web development.</p>
-    </section>
+  <hr>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-      </ul>
-    </section>
+  <!-- ===================================================================
+       EXERCISE 4: Image with Meaningful alt Text
+       =================================================================== -->
+  <section id="exercise-4">
+    <h1>My Campus Photo</h1>
+    <img src="https://picsum.photos/400/300"
+         alt="University students collaborating on laptops in a bright study room"
+         width="400"
+         height="300">
+  </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p><a href="mailto:jisoo@gachon.ac.kr">jisoo@gachon.ac.kr</a></p>
-      <p>
-        <a href="https://github.com/jisoo" target="_blank" rel="noopener noreferrer">
-          GitHub Profile
-        </a>
-      </p>
-    </section>
-  </main>
+  <hr>
 
-  <!-- ═══ FOOTER ════════════════════════════ -->
-  <footer>
-    <p>&copy; 2026 Kim Jisoo · Web Programming K0126002</p>
-  </footer>
+  <!-- ===================================================================
+       EXERCISE 5: Complete Profile Page
+       =================================================================== -->
+  <section id="exercise-5">
+    <h1>Kim Jisoo</h1>
+    <img src="https://picsum.photos/200/200" alt="Kim Jisoo smiling in front of the campus library" width="200" height="200">
+    <p>I am a <strong>Computer Science student</strong> at Gachon University focusing on <em>web design and development</em>.</p>
+    
+    <h2>My Skills</h2>
+    <ul>
+      <li>HTML5 & CSS3</li>
+      <li>JavaScript</li>
+      <li>Git & GitHub</li>
+    </ul>
+
+    <p>
+      <a href="https://gachon.ac.kr" target="_blank" rel="noopener noreferrer">Visit my university</a>
+    </p>
+
+    <footer>
+      <p>&copy; 2026 Kim Jisoo</p>
+    </footer>
+  </section>
+
+  <hr>
+
+  <!-- ===================================================================
+       EXERCISE 6: Fix the Broken HTML (All 5 Bugs Corrected)
+       Bugs fixed:
+       1. <h1>My Blog<h1> → Fixed closing tag: </h1>
+       2. Unclosed <b> tag on web development. → Added </b>
+       3. Malformed link <a src="..."> with mismatched tags → Changed src to href, fixed closing order
+       4. <img href="..."> with empty alt → Changed href to src, provided meaningful alt text
+       5. Unclosed <li> for CSS → Added </li>
+       =================================================================== -->
+  <section id="exercise-6">
+    <h1>My Blog</h1>
+    <p>Welcome! I write about <b>web development.</b></p>
+    <p>See my <a href="https://github.com">GitHub</a></p>
+    <img src="photo.jpg" alt="Profile photo of the blog author">
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <!-- ===================================================================
+       EXERCISE 7: Ordered Steps with Nested List
+       =================================================================== -->
+  <section id="exercise-7">
+    <h1>How to Make Fresh Lemonade</h1>
+
+    <h2>What You Need</h2>
+    <ul>
+      <li>1 cup fresh lemon juice (about 4–6 lemons)</li>
+      <li>1 cup white sugar</li>
+      <li>1 cup water (for simple syrup)</li>
+      <li>3 to 4 cups cold water</li>
+      <li>Ice cubes</li>
+    </ul>
+
+    <h2>Steps</h2>
+    <ol>
+      <li>Prepare simple syrup by heating sugar and 1 cup water in a small saucepan until sugar dissolves.</li>
+      <li>Allow syrup to cool down completely; <strong>never mix hot syrup directly with ice</strong> as it dilutes quickly.</li>
+      <li>Juice the fresh lemons until you have <em>exactly</em> one cup of juice.</li>
+      <li>Combine simple syrup, lemon juice, and cold water in a large pitcher and stir thoroughly.</li>
+      <li>Refrigerate until chilled, serve over ice cubes, and enjoy immediately!</li>
+    </ol>
+  </section>
+
+  <hr>
+
+  <!-- ===================================================================
+       EXERCISE 8: My Favourites Gallery
+       =================================================================== -->
+  <section id="exercise-8">
+    <h1>My Favourites</h1>
+
+    <!-- Book Section -->
+    <div class="card">
+      <h2>Favourite Book: Dune</h2>
+      <img src="https://picsum.photos/300/200?random=1" alt="Cover art or landscape inspired by Dune" width="300" height="200">
+      <p>Frank Herbert's epic masterpiece combines <strong>political intrigue</strong> with deep ecological themes. It remains an <em>unrivaled classic</em> in science fiction literature.</p>
+      <a href="https://en.wikipedia.org/wiki/Dune_(novel)" target="_blank" rel="noopener noreferrer">Learn more</a>
+    </div>
+
+    <!-- Film Section -->
+    <div class="card">
+      <h2>Favourite Film: Parasite</h2>
+      <img src="https://picsum.photos/300/200?random=2" alt="Movie poster aesthetic for Parasite" width="300" height="200">
+      <p>Directed by Bong Joon-ho, this film offers a <strong>brilliant social critique</strong> wrapped in dynamic storytelling. Its unexpected twists keep audiences engaged from start to finish with <em>masterful pacing</em>.</p>
+      <a href="https://en.wikipedia.org/wiki/Parasite_(film)" target="_blank" rel="noopener noreferrer">Learn more</a>
+    </div>
+
+    <!-- Website Section -->
+    <div class="card">
+      <h2>Favourite Website: MDN Web Docs</h2>
+      <img src="https://picsum.photos/300/200?random=3" alt="Developer tools and documentation graphic" width="300" height="200">
+      <p>This platform serves as the <strong>ultimate reference</strong> for modern web development. It is an <em>essential resource</em> for mastering HTML, CSS, and JavaScript standards.</p>
+      <a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">Learn more</a>
+    </div>
+  </section>
 
 </body>
 </html>
